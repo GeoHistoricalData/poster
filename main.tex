@@ -35,6 +35,7 @@
 \newlength{\columnheight}
 \setlength{\columnheight}{105cm}
 
+\hypersetup{colorlinks,linkcolor=,urlcolor=ta3skyblue}
 \let\oldcite=\cite
 \renewcommand{\cite}[1]{\textcolor{ta3chameleon}{\oldcite{#1}}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,12 +45,13 @@
 \begin{frame}
   \begin{block}{What is the GeoHistoricalData project?}
     \textcolor{ta3orange}{GeoHistoricalData} (GHD) is a long-term collaborative research project involving researchers from several institutions (EHESS, IGN, National Archives, EPITA, etc.).\\
-    In addition to a purely methodological approach to the construction of geo-historical information, we also promote research in collaboration with other research groups focused on specific territories and time periods
+    In addition to a methodological approach to the construction of geo-historical information, we also promote research in collaboration with other research groups focused on specific territories and time periods
     %\text{Vectorisation collaborative : Sur l'ensemble du territoire Français: Une série d'images montrant les progrès de la saisie des routes ??? / Carte des clochers ??? / allignement avec avec la base des communes 1793-2006}\\
     \begin{itemize}
-    \item \textcolor{blue}{Clermont-Ferrand} \textcolor{ta3orange}{reconstruction of Cassini sheet n$^{o}$52} with University of Clermont-Ferrand
+    \item \textcolor{blue}{Metropolitan France:} Cassini map thematic vectorisation (roads, churches, etc.)
+    \item \textcolor{blue}{Auvergne:} \textcolor{ta3orange}{reconstruction of Cassini sheet n$^{o}$52} with University of Clermont-Ferrand
       %\text{Vectorisation collaborative approche locale (Clermont) : reconstitution numérique de la planche 52 originale / analyse des proximités des lieux habités de la planche }\\
-    \item \textcolor{blue}{Paris} spatio-temporal databases and geocoding, including \textcolor{ta3orange}{St Jean de Latran}~\cite{Rebolledo-Dhuin2014}
+    \item \textcolor{blue}{Paris:} spatio-temporal databases and geocoding, including \textcolor{ta3orange}{St Jean de Latran}~\cite{Rebolledo-Dhuin2014}
 %      \text{Paris : base de données spatio-temporelle / geocodage automatisé }\\
       %    Dossier St Jean de Latran (\cite{Rebolledo-Dhuin2014})\\
     \end{itemize}
@@ -59,10 +61,11 @@
     \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
     \begin{minipage}[t]{.98\textwidth}
     \renewcommand{\footnoterule}{}
-      \begin{block}{Primary Sources and Georeferencing}
-        \begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+    \begin{block}{Primary Sources and Georeferencing}
+      \begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+        \multicolumn{2}{p{0.9\textwidth}}{Beyond the georeferencing and the digitization of the maps, we also propose a thourough analysis of these maps, including their planimetric accuracy (See \cite{Dumenieu2013a,Dumenieu2015PhD,Dumenieu2018}).}\\
           \multicolumn{2}{c}{\includegraphics[width=0.8\textwidth,trim={0 4cm 0 2cm},clip]{figures/plans_V2.png}}\\
-	  \multicolumn{2}{c}{Sample maps of Paris}\\%ajouter par ici les "temps valides" des cartes.
+	  \multicolumn{2}{c}{\scriptsize Sample maps of Paris}\\%ajouter par ici les "temps valides" des cartes.
           \multicolumn{2}{p{0.9\textwidth}}{
             \tiny{
               \textsc{\textbf{Verniquet 1784-1791}:}
@@ -78,19 +81,19 @@
           }\\
 	  
           \multicolumn{2}{c}{\includegraphics[width=0.6\textwidth]{figures/errorthemes.png}}\\
-	  \multicolumn{2}{c}{Error vectors measured on street corners and buildings (exaggerated 100 times)}\\
+	  \multicolumn{2}{c}{\scriptsize Error vectors measured on street corners and buildings (exaggerated 100 times)}\\
           \vspace{0pt}
           \includegraphics[width=0.4\textwidth]{figures/error_x.png}&
           \vspace{0pt}
           \includegraphics[width=0.48\textwidth]{figures/error_y.png}\\
-	  Mapping the horizontal component of the distortion vectors&Mapping the vertical component of the distortion vectors\\
-	  See \cite{Dumenieu2013a,Dumenieu2015PhD,Dumenieu2018}
+	  \scriptsize Mapping the horizontal component of the distortion vectors&
+          \scriptsize Mapping the vertical component of the distortion vectors
         \end{tabular}
       \end{block}
       \begin{block}{Geocoding}
         \begin{tabular}{>{\centering}m{0.9\textwidth}}
           \includegraphics[width=0.65\textwidth]{figures/geocoding}\\
-          Sample of geocoded INPI patents using the historical geocoder~\cite{Cura2018}
+          \scriptsize Sample of geocoded INPI (French National Industrial Property Institute) patents (from \url{http://bases-brevets19e.inpi.fr/}) using the historical geocoder~\cite{Cura2018}
         \end{tabular}
       \end{block}
     \end{minipage}
@@ -101,14 +104,21 @@
     \begin{minipage}[t]{.98\textwidth}
       \begin{block}{Content extraction: topography, natural graphs \& networks}
         \begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
-	%\begin{tabular}{p{\textwidth}}
-	  \includegraphics[width=0.4\textwidth]{figures/cassini}&
+	  %\begin{tabular}{p{\textwidth}}
+          \vspace{0pt}
+	  \includegraphics[width=0.5\textwidth]{figures/cassini}&
 	  %TODO : ajouter une extraction des bottins ?
-          \includegraphics[width=0.4\textwidth]{figures/contrib}\\
-          The ongoing digitization of the Cassini Map of France (see~\cite{Perret2015_,Perret2015Data_})&
-          The main roads from the Cassini map, extracted collaboratively in less than 1 year (2013-2014). Colors correspond to contributors.\\
+          \vspace{0pt}
+          {\hspace*{3cm}
+            \includegraphics[width=0.3\textwidth]{figures/contrib}
+          }
+          \\
+          \scriptsize The ongoing digitization of the Cassini Map of France (see~\cite{Perret2015_,Perret2015Data_})&
+          \scriptsize The main roads from the Cassini map, extracted collaboratively in less than 1 year (2013-2014). Colors correspond to contributors.\\
+        \end{tabular}
+        \begin{tabular}{>{\centering}p{0.9\textwidth}}
           \includegraphics[width=0.9\textwidth]{figures/progression}\\
-          \multicolumn{2}{c}{Progress of the digitization during the first years}\\
+          \scriptsize Progress of the digitization during the first years (in \textcolor{red}{red}: elements digitized during the time period)
         \end{tabular}
       \end{block}
       \begin{block}{Analysis}
@@ -117,21 +127,45 @@
       
 	\begin{tabular}{>{\centering}m{0.9\textwidth}}
 	  \includegraphics[width=0.56\textwidth]{figures/patterns}\\
-	  Example of patterns extracted from the integration of several street networks (see~\cite{Costes2015_,Costes2016PhD})\\
+	  \scriptsize Example of patterns extracted from the integration of several street networks (see~\cite{Costes2015_,Costes2016PhD})\\
         \end{tabular}
       \end{block}
     \end{minipage}
     \end{beamercolorbox}
     \end{column}
   \end{columns}
-  \begin{block}{Conclusion \& Applications}
-    Our main contributions involve
-    \begin{itemize}
-    \item a \textcolor{ta3orange}{global approach} to study the co-evolution of spatial and social dynamics~\cite{Dumenieu2013a, Dumenieu2015PhD}
-    \item a \textcolor{ta3orange}{critical analysis} of \textcolor{ta3orange}{primary sources}~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}
-    \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information~\cite{Perret2015_, Perret2015Data_, Cura2018}
-    \end{itemize}
-  \end{block}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+    \begin{minipage}[t]{.98\textwidth}
+      \begin{block}{Main contributions}%Conclusion \& Applications}
+        \tiny
+        %    Our main contributions involve
+        \begin{itemize}
+        \item a \textcolor{ta3orange}{global approach} to study the co-evolution of spatial and social dynamics~\cite{Dumenieu2013a, Dumenieu2015PhD}
+        \item a \textcolor{ta3orange}{critical analysis} of \textcolor{ta3orange}{primary sources}~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}
+        \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information~\cite{Perret2015_, Perret2015Data_, Cura2018}
+        \end{itemize}
+      \end{block}
+    \end{minipage}
+    \end{beamercolorbox}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+    \begin{minipage}[t]{.98\textwidth}
+      \begin{block}{Open science}
+        \tiny
+        Website: \url{http://geohistoricaldata.org/}\\
+        Group: \url{https://github.com/GeoHistoricalData}\\
+        Geocoder: \url{https://github.com/GeoHistoricalData/historical_geocoding}\\
+        The 18$^{th}$ century Cassini roads and cities dataset: \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28674}\\
+        Other datasets are available from the website.
+      \end{block}
+    \end{minipage}
+    \end{beamercolorbox}
+    \end{column}
+  \end{columns}
+  
   \begin{block}{References}
     \vspace*{-1em}
 	\begin{multicols}{2}
