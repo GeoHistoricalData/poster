@@ -68,6 +68,7 @@
   \def\insertdescriptionitem{#1}%
   {\usebeamertemplate**{description item}}\hfil}
 \makeatother
+\usepackage[abs]{overpic}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -167,7 +168,16 @@
           \vspace{0pt}
 	  \includegraphics[width=0.4\textwidth,trim={4.5cm 1.7cm 4.5cm 3.2cm},clip]{figures/EvolutionPatterns}&
           \vspace{0pt}
-          \includegraphics[width=0.59\textwidth,trim={1cm 0cm 0.8cm 0.1cm},clip]{figures/Latran_1752-2016}\\
+          \begin{overpic}[width=0.59\textwidth,unit=1mm,trim={1cm 0cm 0.8cm 0.1cm},clip]{figures/Latran_1752-2016}
+            \put(10,65){\colorbox{white}{\tiny 1752}}
+            \put(70,65){\colorbox{white}{\tiny 1757}}
+            \put(130,65){\colorbox{white}{\tiny ???}}
+            \put(190,65){\colorbox{white}{\tiny 1810}}
+            \put(10,5){\colorbox{white}{\tiny 1813-1816}}
+            \put(70,5){\colorbox{white}{\tiny 1852}}
+            \put(130,5){\colorbox{white}{\tiny 2016}}
+          \end{overpic}\\
+          %\includegraphics[width=0.59\textwidth,trim={1cm 0cm 0.8cm 0.1cm},clip]{figures/Latran_1752-2016}\\
 	  \scriptsize Example of patterns extracted from the integration of several street networks~\cite{Costes2015_,Costes2016PhD}&
 	  \scriptsize Saint-Jean-de-Latran, from enclosure to its destruction: morphological evolution of a Parisian downtown block (1752-1850, 2016) (see~\cite{Rebolledo-Dhuin2014}, from~\url{https://goo.gl/sT3oYw})
         \end{tabular}
