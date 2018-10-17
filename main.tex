@@ -69,11 +69,13 @@
   {\usebeamertemplate**{description item}}\hfil}
 \makeatother
 \usepackage[abs]{overpic}
+\newcommand{\reallytiny}{\fontsize{14}{14}\selectfont}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \begin{frame}
+\centering
   \begin{block}{What is the GeoHistoricalData Project?}
     \textcolor{ta3orange}{GeoHistoricalData} (GHD) is a long-term collaborative research project involving researchers from several institutions.\\% {\scriptsize(\textit{CRH/EHESS-CNRS, LaSTIG/IGN, CEA, CHARTA SRL, IFSTTAR, ArScAn, Le Ny Conseil, Géographie Cités/Sorbonne, INRA Nancy, Archives Nationales, LRDE/EPITA, etc.})}.\\
     In addition to a methodological roadmap for the construction of geo-historical information, we promote joint-research in collaboration with other research groups focused on specific territories and time periods.% The Parisian part of the project has been recently founded by ANR (SoDUCo - \textit{Social Dynamics in Urban COntext. Open tools, models, and data - Paris and its suburbs, 1789-1950}. 2019-2023).
@@ -88,16 +90,17 @@
     \end{itemize}
   \end{block}
   \begin{columns}
-    \begin{column}{0.5\textwidth}
-    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-    \begin{minipage}[t]{.98\textwidth}
-    \renewcommand{\footnoterule}{}
+\centering
+    \begin{column}{0.494\textwidth}
+%    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+%    \begin{minipage}[t]{.98\textwidth}
+%    \renewcommand{\footnoterule}{}
     \begin{block}{Primary Sources and Georeferencing}
       \centering
       \begin{tabular}{p{0.49\textwidth}p{0.49\textwidth}}
         \multicolumn{2}{p{0.98\textwidth}}{Beyond georeferencing and digitizing maps, we propose a thorough analysis of these maps, including their planimetric accuracy~\cite{Dumenieu2013a,Dumenieu2015PhD,Dumenieu2018}}\\
         \multicolumn{2}{c}{
-          \begin{overpic}[width=0.98\textwidth,unit=1mm,trim={0 3cm 0 3.0cm},clip]{figures/plans_V2}
+          \begin{overpic}[width=0.98\textwidth,unit=1mm,trim={0 2.8cm 0 2.8cm},clip]{figures/plans_V2}
             \put(10,5){\colorbox{white}{\tiny Verniquet 1784-1791}}
             \put(110,5){\colorbox{white}{\tiny Vasserot 1808-1836}}
             \put(210,5){\colorbox{white}{\tiny Jacoubet 1827-1836}}
@@ -106,7 +109,7 @@
         }\\
 	\multicolumn{2}{c}{\scriptsize Sample maps of Paris}\\%ajouter par ici les "temps valides" des cartes.
         \multicolumn{2}{p{0.98\textwidth}}{
-          \tiny{
+          \reallytiny{
             \textsc{\textbf{Verniquet 1784-1791}:}
             \textit{Atlas du plan général de la ville de Paris, levé géométriquement par le cen \textsc{Verniquet} rapporté sur une échelle d'une demie ligne pour toise}, divisée en 72 planches, compris les cartouches et plan des opérations trigonométriques.
             Dessiné et gravé par les cens \textsc{Bartholomé} et \textsc{Mathieu}...,
@@ -132,29 +135,29 @@
     \begin{block}{Large Historical Geocoding}
       \centering
       \begin{tabular}{>{\centering}m{0.98\textwidth}}
-        \includegraphics[width=0.7\textwidth]{figures/geocoding}\\
+        \includegraphics[width=0.965\textwidth,trim={0 6cm 0 2cm},clip]{figures/geocoding}\\
         \scriptsize Sample of geocoded INPI (French National Industrial Property Institute) patents (from \url{http://bases-brevets19e.inpi.fr/}) using the historical geocoder~\cite{Cura2018}
       \end{tabular}
     \end{block}
-    \end{minipage}
-    \end{beamercolorbox}
+%    \end{minipage}
+%    \end{beamercolorbox}
     \end{column}
-    \begin{column}{0.5\textwidth}
-    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-    \begin{minipage}[t]{.98\textwidth}
+    \begin{column}{0.494\textwidth}
+%    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+%    \begin{minipage}[t]{.98\textwidth}
       \begin{block}{Collaborative Content Extraction}
         \centering
         \begin{flushleft}
           Topography, natural graphs \textit{\&} historical networks~\cite{Perret2015_,Perret2015Data_}
         \end{flushleft}
         \begin{tabular}{p{0.98\textwidth}}
-	  \centering\includegraphics[width=0.965\textwidth]{figures/cassini} \\
+	  \centering\includegraphics[width=0.98\textwidth]{figures/cassini} \\
           \scriptsize
           On the left: Collaborative digitization of the Complete set of Cassini \textsc{iii}'s map of France in 180 sheets, 1750-1790.
           On the right: Complete collaborative digitization of the \textit{Carte générale} \& particulière de la France.
           N\degree 52. F.\textsuperscript{le} 110 [Clermont en Auvergne].
           \begin{flushleft}
-            \tiny{
+            \reallytiny{
               Carte en couleur de 610 x 955 mm (format « grand-aigle ») à l'échelle 1:86~400 ou 1 ligne pour 100 toises.
               \textbf{Établie de 1759 à 1777 sous la direction de} César François \textsc{Cassini de Thury}, Charles Étienne Louis \textsc{Camus} (puis Rodolphe \textsc{Perronet}) et d’Étienne \textsc{Mignot de Montigny}.
               \textbf{Levés de 1759 à 1775} par P. de \textsc{La Court} (\textsc{ne} partiel, 1759), François \textsc{Pasumot}, Claude \textsc{Pezet}, \textsc{Dallier} et \textsc{Dailley} (\textsc{no-so}, c.1764-1766), Louis \textsc{Le Bel} (\textsc{se}, 1766-1768; \textsc{ne} et \textsc{so}, 1769), \textsc{Dubois} \textit{\&} Louis \textsc{Cabay} (\textsc{no-ne}, 1772-1773), \textsc{Querry} \textit{\&} François \textsc{La Ruelle} (\textsc{ne}, 1774-1775).
@@ -164,8 +167,8 @@
             }
           \end{flushleft}
         \end{tabular}
-        \begin{tabular}{>{\centering}p{0.95\textwidth}}
-          \includegraphics[width=0.95\textwidth]{figures/progression}\\
+        \begin{tabular}{>{\centering}p{0.98\textwidth}}
+          \includegraphics[width=0.98\textwidth]{figures/progression}\\
           \scriptsize Progress of the digitization during the first years (in \textcolor{red}{red}: elements digitized during the time period)
         \end{tabular}
       \end{block}
@@ -192,14 +195,15 @@
         \end{tabular}
         
       \end{block}
-    \end{minipage}
-    \end{beamercolorbox}
+%    \end{minipage}
+%    \end{beamercolorbox}
     \end{column}
   \end{columns}
   \begin{columns}
-    \begin{column}{0.6\textwidth}
-    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-    \begin{minipage}[t]{.98\textwidth}
+\centering
+    \begin{column}{0.594\textwidth}
+%    \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+%    \begin{minipage}[t]{.98\textwidth}
       \begin{block}{Main contributions}%Conclusion \& Applications}
         \tiny
         %    Our main contributions involve
@@ -209,30 +213,31 @@
         \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information~\cite{Perret2015_, Perret2015Data_, Cura2018}
         \end{itemize}
       \end{block}
-    \end{minipage}
-    \end{beamercolorbox}
+%    \end{minipage}
+%    \end{beamercolorbox}
     \end{column}
-    \begin{column}{0.4\textwidth}
-      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
-        \begin{minipage}[t]{.98\textwidth}
+    \begin{column}{0.394\textwidth}
+%      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+%        \begin{minipage}[t]{.98\textwidth}
           \begin{block}{Open science}
+    \vspace*{-0.25em}
             %\setbeamertemplate{description item}[align left]
             \begin{Mdescription}{Grouppp}
-              \tiny
+              \scriptsize
               %Website: \url{http://geohistoricaldata.org/}\\
             \item[\textcolor{ta3orange}{Group:}] \url{https://github.com/GeoHistoricalData}\\
             \item[\textcolor{ta3orange}{Geocoder:}] \url{https://github.com/GeoHistoricalData/historical_geocoding}\\
             %\item[\textcolor{ta3orange}{Arpenteur Topographe:}] \url{http://geohistoricaldata.herokuapp.com/}\\
             \item[\textcolor{ta3orange}{Datasets:}]
-              \begin{itemize}\tiny
-              \item The 18$^{th}$ century Cassini roads and cities dataset: \url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28674}\\
-              \item Other datasets are available from the website.
+              \begin{itemize}\scriptsize
+              \item The 18$^{th}$ century Cassini roads and cities dataset: \url{https://tinyurl.com/y7j9ozht}%\url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28674}\\
+              \item Other datasets are available from the website: \url{http://geohistoricaldata.org/}
               \end{itemize}
             \item[\textcolor{ta3orange}{Semantic Wiki:}] \url{http://wiki.geohistoricaldata.org/}
             \end{Mdescription}
           \end{block}
-        \end{minipage}
-      \end{beamercolorbox}
+%        \end{minipage}
+%      \end{beamercolorbox}
     \end{column}
   \end{columns}
   
