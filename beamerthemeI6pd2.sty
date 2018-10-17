@@ -22,7 +22,7 @@
 \setbeamercolor*{normal text}{fg=tachameleon, bg=ta3gray}
 \setbeamercolor*{block body}{bg=ta3aluminium,fg=black}
 \setbeamercolor*{block title}{fg=taorange,bg=ta2gray}
-\setbeamerfont{block title}{size=\large,series=\bf}
+\setbeamerfont{block title}{size=\Huge,series=\bf}
 \setbeamercolor{upper separation line head}{fg=ta2orange}
 
 \setbeamercolor*{example body}{fg=ta3aluminium,bg=black}
@@ -42,8 +42,8 @@
 \setbeamertemplate{block begin}{
   \vskip.75ex
   \begin{beamercolorbox}[ht=3.5ex,dp=0.5ex,center,leftskip=-1em,colsep*=.75ex]{block title}%
-    \usebeamerfont*{block title}%
-    {\phantom{Gg}\insertblocktitle}% phantom because of baseline problem
+    \usebeamerfont{block title}%
+    {\phantom{Gg}\Large\vspace*{-0.6ex}\insertblocktitle}% phantom because of baseline problem
   \end{beamercolorbox}%
   {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
   \usebeamerfont{block body}%
