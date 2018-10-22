@@ -72,19 +72,22 @@
 \newcommand{\reallytiny}{\fontsize{14}{14}\selectfont}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setbeamertemplate{bibliography item}[text]
+\newcommand{\important}[1]{\textbf{\textcolor{ta4orange}{#1}}}
+\newcommand{\lessimportant}[1]{\textbf{\textcolor{ta3skyblue}{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \begin{frame}
 \centering
   \begin{block}{What is the GeoHistoricalData Project?}
-    \textcolor{ta3orange}{GeoHistoricalData} (GHD) is a long-term collaborative research project involving researchers from several institutions.\\% {\scriptsize(\textit{CRH/EHESS-CNRS, LaSTIG/IGN, CEA, CHARTA SRL, IFSTTAR, ArScAn, Le Ny Conseil, Géographie Cités/Sorbonne, INRA Nancy, Archives Nationales, LRDE/EPITA, etc.})}.\\
-    In addition to a methodological roadmap for the construction of geo-historical information, we promote joint-research in collaboration with other research groups focused on specific territories and time periods.% The Parisian part of the project has been recently founded by ANR (SoDUCo - \textit{Social Dynamics in Urban COntext. Open tools, models, and data - Paris and its suburbs, 1789-1950}. 2019-2023).
+    \important{GeoHistoricalData} (GHD) is a long-term \textbf{collaborative research project} involving researchers from several institutions.\\% {\scriptsize(\textit{CRH/EHESS-CNRS, LaSTIG/IGN, CEA, CHARTA SRL, IFSTTAR, ArScAn, Le Ny Conseil, Géographie Cités/Sorbonne, INRA Nancy, Archives Nationales, LRDE/EPITA, etc.})}.\\
+    In addition to a \textbf{methodological roadmap for the construction of geo-historical information}, we promote joint research in collaboration with other research groups focused on specific territories and time periods.% The Parisian part of the project has been recently founded by ANR (SoDUCo - \textit{Social Dynamics in Urban COntext. Open tools, models, and data - Paris and its suburbs, 1789-1950}. 2019-2023).
     %\text{Vectorisation collaborative : Sur l'ensemble du territoire Français: Une série d'images montrant les progrès de la saisie des routes ??? / Carte des clochers ??? / allignement avec avec la base des communes 1793-2006}\\
     \begin{itemize}
-    \item \textcolor{blue}{Metropolitan France:} \textcolor{ta3orange}{Cassini} map thematic vectorisation (roads, churches, etc.)
-    \item \textcolor{blue}{Auvergne:} \textcolor{ta3orange}{reconstruction of Cassini sheet n\degree52} with the University of Clermont-Ferrand
+    \item \lessimportant{Metropolitan France:} \important{Cassini} map thematic vectorisation (roads, churches, etc.)
+    \item \lessimportant{Auvergne:} \important{reconstruction of Cassini sheet n\degree52} with the University of Clermont-Ferrand
       %\text{Vectorisation collaborative approche locale (Clermont) : reconstitution numérique de la planche 52 originale / analyse des proximités des lieux habités de la planche }\\
-    \item \textcolor{blue}{Paris:} spatio-temporal databases and geocoding, including \textcolor{ta3orange}{St Jean de Latran}{\scriptsize ~\cite{Rebolledo-Dhuin2014}}
+    \item \lessimportant{Paris:} spatio-temporal databases and geocoding, including \important{St Jean de Latran}{\scriptsize ~\cite{Rebolledo-Dhuin2014}}
 %      \text{Paris : base de données spatio-temporelle / geocodage automatisé }\\
       %    Dossier St Jean de Latran (\cite{Rebolledo-Dhuin2014})\\
     \end{itemize}
@@ -98,7 +101,7 @@
     \begin{block}{Primary Sources and Georeferencing}
       \centering
       \begin{tabular}{p{0.49\textwidth}p{0.49\textwidth}}
-        \multicolumn{2}{p{0.98\textwidth}}{Beyond georeferencing and digitizing maps, we propose a thorough analysis of these maps, including their planimetric accuracy{\scriptsize ~\cite{Dumenieu2013a,Dumenieu2015PhD}}}\\
+        \multicolumn{2}{p{0.98\textwidth}}{Beyond \textbf{georeferencing} and \textbf{digitizing} maps, we propose a \textbf{thorough analysis} of these maps, including their planimetric accuracy{\scriptsize ~\cite{Dumenieu2013a,Dumenieu2015PhD}}}\\
         \multicolumn{2}{c}{
   	\centering\includegraphics[width=0.9\textwidth,trim={0 0 0 8cm},clip]{figures/plans}
         }\\
@@ -150,7 +153,7 @@
         \begin{tabular}{p{0.98\textwidth}}
 	  \centering\includegraphics[width=0.98\textwidth]{figures/cassini} \\
           \scriptsize
-          On the left: Collaborative digitization of the Complete set of Cassini \textsc{iii}'s map of France in 180 sheets, 1750-1790.
+          On the left: Collaborative digitization of the Complete set of \textbf{Cassini \textsc{iii}'s map of France} in 180 sheets, 1750-1790.
           On the right: Complete collaborative digitization of the \textit{Carte générale} \& particulière de la France.
           N\degree 52. F.\textsuperscript{le} 110 [Clermont en Auvergne].
           \begin{flushleft}
@@ -205,9 +208,9 @@
         \tiny
         %    Our main contributions involve
         \begin{itemize}
-        \item a \textcolor{ta3orange}{global approach} to study the co-evolution of spatial and social dynamics{\scriptsize ~\cite{Dumenieu2013a, Dumenieu2015PhD}}
-        \item a \textcolor{ta3orange}{critical analysis} of \textcolor{ta3orange}{primary sources}{\scriptsize ~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}}
-        \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information{\scriptsize ~\cite{Perret2015_, Perret2015Data_, Cura2018}}
+        \item a \important{global approach} to study the \textbf{co-evolution of spatial and social dynamics}{\scriptsize ~\cite{Dumenieu2013a, Dumenieu2015PhD}}
+        \item a \important{critical analysis} of \important{primary sources}{\scriptsize ~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}}
+        \item the \important{collaborative co-construction} of geo-historical information{\scriptsize ~\cite{Perret2015_, Perret2015Data_, Cura2018}}
         \end{itemize}
       \end{block}
 %    \end{minipage}
@@ -222,15 +225,15 @@
             \begin{Mdescription}{Grouppp}
               \scriptsize
               %Website: \url{http://geohistoricaldata.org/}\\
-            \item[\textcolor{ta3orange}{Group:}] \url{https://github.com/GeoHistoricalData}\\
-            \item[\textcolor{ta3orange}{Geocoder:}] \url{https://github.com/GeoHistoricalData/historical_geocoding}\\
-            %\item[\textcolor{ta3orange}{Arpenteur Topographe:}] \url{http://geohistoricaldata.herokuapp.com/}\\
-            \item[\textcolor{ta3orange}{Datasets:}]
+            \item[\important{Group:}] \url{https://github.com/GeoHistoricalData}\\
+            \item[\important{Geocoder:}] \url{https://github.com/GeoHistoricalData/historical_geocoding}\\
+            %\item[\textcolor{ta4orange}{Arpenteur Topographe:}] \url{http://geohistoricaldata.herokuapp.com/}\\
+            \item[\important{Datasets:}]
               \begin{itemize}\scriptsize
               \item The 18$^{th}$ century Cassini roads and cities dataset: \url{https://tinyurl.com/y7j9ozht}%\url{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/28674}\\
               \item Other datasets are available from the website: \url{http://geohistoricaldata.org/}
               \end{itemize}
-            \item[\textcolor{ta3orange}{Semantic Wiki:}] \url{http://wiki.geohistoricaldata.org/}
+            \item[\important{Semantic Wiki:}] \url{http://wiki.geohistoricaldata.org/}
             \end{Mdescription}
           \end{block}
 %        \end{minipage}
@@ -242,7 +245,7 @@
     \vspace*{-1em}
 	\begin{multicols}{3}
 		\tiny
-		\bibliographystyle{alpha}
+		\bibliographystyle{alpha}%abbrv
 		\bibliography{main}
 	\end{multicols}
   \end{block}
