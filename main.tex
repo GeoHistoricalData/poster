@@ -71,7 +71,7 @@
 \usepackage[abs]{overpic}
 \newcommand{\reallytiny}{\fontsize{14}{14}\selectfont}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\setbeamertemplate{bibliography item}[text]
 \begin{document}
 
 \begin{frame}
@@ -84,7 +84,7 @@
     \item \textcolor{blue}{Metropolitan France:} \textcolor{ta3orange}{Cassini} map thematic vectorisation (roads, churches, etc.)
     \item \textcolor{blue}{Auvergne:} \textcolor{ta3orange}{reconstruction of Cassini sheet n\degree52} with the University of Clermont-Ferrand
       %\text{Vectorisation collaborative approche locale (Clermont) : reconstitution numérique de la planche 52 originale / analyse des proximités des lieux habités de la planche }\\
-    \item \textcolor{blue}{Paris:} spatio-temporal databases and geocoding, including \textcolor{ta3orange}{St Jean de Latran}~\cite{Rebolledo-Dhuin2014}
+    \item \textcolor{blue}{Paris:} spatio-temporal databases and geocoding, including \textcolor{ta3orange}{St Jean de Latran}{\scriptsize ~\cite{Rebolledo-Dhuin2014}}
 %      \text{Paris : base de données spatio-temporelle / geocodage automatisé }\\
       %    Dossier St Jean de Latran (\cite{Rebolledo-Dhuin2014})\\
     \end{itemize}
@@ -98,9 +98,9 @@
     \begin{block}{Primary Sources and Georeferencing}
       \centering
       \begin{tabular}{p{0.49\textwidth}p{0.49\textwidth}}
-        \multicolumn{2}{p{0.98\textwidth}}{Beyond georeferencing and digitizing maps, we propose a thorough analysis of these maps, including their planimetric accuracy~\cite{Dumenieu2013a,Dumenieu2015PhD}}\\
+        \multicolumn{2}{p{0.98\textwidth}}{Beyond georeferencing and digitizing maps, we propose a thorough analysis of these maps, including their planimetric accuracy{\scriptsize ~\cite{Dumenieu2013a,Dumenieu2015PhD}}}\\
         \multicolumn{2}{c}{
-  			\centering\includegraphics[width=0.9\textwidth]{figures/plans} \
+  	\centering\includegraphics[width=0.9\textwidth,trim={0 0 0 8cm},clip]{figures/plans}
         }\\
 	\multicolumn{2}{c}{\scriptsize Sample maps of Paris}\\%ajouter par ici les "temps valides" des cartes.
         \multicolumn{2}{p{0.98\textwidth}}{
@@ -118,7 +118,7 @@
            \textit{Atlas municipal des vingt arrondissements de la ville de Paris}, dressé sous l'administration de M. E.
             \textsc{\textbf{Alphand 1888}:}\textsc{Poubelle} préfet, sous la direction de M. \textsc{Alphand}...; par les soins de M. L. \textsc{Fauve} géomètre en chef, avec le concours des gémoètres du plan de Paris, [Paris], [L. Wuhrer], 1895, 1 vol., ([1]-16 pl.)
           }\\
-        \multicolumn{2}{p{0.98\textwidth}}{\centering Measuring the planimetric accuracy of the Verniquet's atlas of Paris~\cite{Dumenieu2018}}\\	
+        \multicolumn{2}{p{0.98\textwidth}}{\centering Measuring the planimetric accuracy of the Verniquet's atlas of Paris{\scriptsize ~\cite{Dumenieu2018}}}\\	
         \multicolumn{2}{c}{\includegraphics[width=0.6\textwidth]{figures/errorthemes.png}}\\
 	\multicolumn{2}{c}{\scriptsize Error vectors measured on street corners and buildings (exaggerated 100 times)}\\
         \vspace{0pt}
@@ -132,7 +132,7 @@
     \begin{block}{Large Historical Geocoding}
       \centering
       \begin{tabular}{>{\centering}m{0.98\textwidth}}
-        \includegraphics[width=0.965\textwidth,trim={0 6cm 0 2cm},clip]{figures/geocoding}\\
+        \includegraphics[width=0.935\textwidth,trim={0 6cm 0 2cm},clip]{figures/geocoding}\\
         \scriptsize Sample of geocoded INPI (French National Industrial Property Institute) patents (from \url{http://bases-brevets19e.inpi.fr/}) using the historical geocoder~\cite{Cura2018}
       \end{tabular}
     \end{block}
@@ -145,7 +145,7 @@
       \begin{block}{Collaborative Content Extraction}
         \centering
         \begin{flushleft}
-          Topography, natural graphs \textit{\&} historical networks~\cite{Perret2015_,Perret2015Data_}
+          Topography, natural graphs, historical networks \textit{\&} forests{\scriptsize ~\cite{Perret2015_,Perret2015Data_,vallauri2012forets}}
         \end{flushleft}
         \begin{tabular}{p{0.98\textwidth}}
 	  \centering\includegraphics[width=0.98\textwidth]{figures/cassini} \\
@@ -205,9 +205,9 @@
         \tiny
         %    Our main contributions involve
         \begin{itemize}
-        \item a \textcolor{ta3orange}{global approach} to study the co-evolution of spatial and social dynamics~\cite{Dumenieu2013a, Dumenieu2015PhD}
-        \item a \textcolor{ta3orange}{critical analysis} of \textcolor{ta3orange}{primary sources}~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}
-        \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information~\cite{Perret2015_, Perret2015Data_, Cura2018}
+        \item a \textcolor{ta3orange}{global approach} to study the co-evolution of spatial and social dynamics{\scriptsize ~\cite{Dumenieu2013a, Dumenieu2015PhD}}
+        \item a \textcolor{ta3orange}{critical analysis} of \textcolor{ta3orange}{primary sources}{\scriptsize ~\cite{Costes2015_, Dumenieu2015PhD, Costes2016PhD, Dumenieu2018}}
+        \item the \textcolor{ta3orange}{collaborative co-construction} of geo-historical information{\scriptsize ~\cite{Perret2015_, Perret2015Data_, Cura2018}}
         \end{itemize}
       \end{block}
 %    \end{minipage}
@@ -239,8 +239,8 @@
   \end{columns}
   
   \begin{block}{References}
-    \vspace*{-1.5em}
-	\begin{multicols}{2}
+    \vspace*{-1em}
+	\begin{multicols}{3}
 		\tiny
 		\bibliographystyle{alpha}
 		\bibliography{main}
